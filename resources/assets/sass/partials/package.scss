@@ -1,0 +1,36 @@
+
+.row {
+  @media (max-width: 767px) {
+    max-width: 340px;
+    margin: 2% auto 0;
+  }
+  .shipWrap {
+    margin: 6% auto;
+    max-width: 940px;
+    padding: 0;
+    @media (max-width: 767px) {
+      margin-top: 20%;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      font-weight: 600;
+      line-height: 1.2em;
+      margin: 2% 0 0;
+      @media (max-width: 767px) {
+        font-size: 1.6em;
+        margin-top: 10%;
+
+      }
+    }
+    #packageName, #packageTxt {
+      text-align: center;
+      margin: 2% 0;
+    }
+
+  }
+}
+
+
+
+

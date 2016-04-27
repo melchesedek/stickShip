@@ -1,0 +1,108 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "partials/package";
+@import "partials/form";
+@import "partials/modal";
+
+/**
+* Global Variable 
+*/
+
+/**
+* Global Mixins 
+*/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin circle($width, $color) {
+  width: $width;
+  height: $width;
+  background: $color;
+  -webkit-border-radius: $width/2;
+  -moz-border-radius: $width/2;
+  border-radius: $width/2;
+}
+
+/**
+* Global Styles 
+*/
+.navbar-inverse {
+  background-color: #252525;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #252525;
+}
+
+div.action {
+  text-align: center;
+  margin-top: 3%;
+}
+
+body {
+  background-color: #ffffff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+nav {
+  .container {
+    .navbar-header {
+      padding-left: 0;
+      .navbar-brand {
+        padding: 15px 0;
+        img {
+          height: 100%;
+          width: auto;
+          max-width: 174px;
+          max-height: 30px;
+          @media (max-width: 767px) {
+            margin-left: 6%;
+
+          }
+        }
+      }
+    }
+    #navbar {
+      ul {
+        li {
+          a {
+            border-bottom: 2px solid #4fab55;
+            background-color: transparent;
+            color: #fff;
+            padding-left: 0;
+            padding-right: 0;
+            margin: 0 20px;
+            font-size: 18px;
+            text-rendering: optimizeLegibility;
+            letter-spacing: 1px;
+            font-weight: bold;
+            -webkit-font-smoothing: antialiased;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+
+.content {
+  text-align: center;
+  display: inline-block;
+}
+
+.btn {
+  @media (max-width: 767px) {
+    margin-bottom: 4%;
+  }
+}
